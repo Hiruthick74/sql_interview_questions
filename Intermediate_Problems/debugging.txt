@@ -1,0 +1,101 @@
+📁 File: mysql_debugging_questions.txt
+
+1. What does the MySQL error 'ERROR 1064 (42000)' typically indicate?
+A. A connection timeout  
+B. A missing table  
+C. A syntax error in the SQL query  
+D. A duplicate key error  
+✅ Answer: C  
+🧠 Explanation: This error means there's a syntax mistake in the SQL query.
+
+---
+
+2. Which command helps you check the structure of a table in MySQL?
+A. SHOW DATABASES;  
+B. SHOW TABLES;  
+C. SELECT * FROM table_name;  
+D. DESCRIBE table_name;  
+✅ Answer: D  
+🧠 Explanation: DESCRIBE shows column names, types, and constraints.
+
+---
+
+3. What is the likely cause of 'Unknown column' error in MySQL?
+A. The table does not exist  
+B. The user lacks privileges  
+C. The database is corrupted  
+D. The column name is misspelled or does not exist  
+✅ Answer: D  
+🧠 Explanation: This error usually comes from a typo or missing column.
+
+---
+
+4. Which MySQL command can help identify slow queries?
+A. SHOW SLOW QUERIES;  
+B. EXPLAIN SELECT ...;  
+C. SHOW PROCESSLIST;  
+D. SHOW TABLE STATUS;  
+✅ Answer: C  
+🧠 Explanation: SHOW PROCESSLIST reveals long-running queries.
+
+---
+
+5. What does the EXPLAIN keyword do in MySQL?
+A. Shows user privileges  
+B. Executes the query  
+C. Shows the query execution plan  
+D. Displays table structure  
+✅ Answer: C  
+🧠 Explanation: EXPLAIN helps analyze how MySQL processes a query.
+
+---
+
+6. Which of the following can cause a 'Duplicate entry' error in MySQL?
+A. Inserting NULL into a NOT NULL column  
+B. Inserting a value that violates a UNIQUE constraint  
+C. Referencing a non-existent table  
+D. Using incorrect syntax  
+✅ Answer: B  
+🧠 Explanation: This error occurs when a duplicate value violates a UNIQUE or PRIMARY KEY constraint.
+
+---
+
+7. How can you debug a query that returns no results unexpectedly?
+A. Verify table existence  
+B. Check WHERE clause conditions  
+C. Check for syntax errors  
+D. Restart the MySQL server  
+✅ Answer: B  
+🧠 Explanation: Incorrect WHERE conditions often filter out all rows.
+
+---
+
+8. Which MySQL function helps you find the number of rows affected by a query?
+A. FOUND_ROWS()  
+B. COUNT(*)  
+C. ROW_COUNT()  
+D. AFFECTED_ROWS()  
+✅ Answer: A  
+🧠 Explanation: FOUND_ROWS() shows how many rows would be returned without LIMIT.
+
+---
+
+9. What is the purpose of enabling the general query log in MySQL?
+A. To optimize queries automatically  
+B. To backup the database  
+C. To monitor user privileges  
+D. To log all queries executed by the server  
+✅ Answer: D  
+🧠 Explanation: The general query log helps track all SQL statements for debugging.
+
+---
+
+10. Which MySQL tool helps analyze and optimize queries?
+A. mysqldump  
+B. mysqlcheck  
+C. mysqladmin  
+D. EXPLAIN  
+✅ Answer: D  
+🧠 Explanation: EXPLAIN shows how MySQL executes queries, helping with optimization.
+
+---
